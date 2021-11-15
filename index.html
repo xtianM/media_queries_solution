@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+    <style>
+      /* 1.
+          apply global configs
+        */
+
+      /* 2.
+          - apply Segoe UI font for global style
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      /* 3.
+          - apply any background images from https://www.pexels.com/ (Note:* choose a landscape type of images)
+          - all text to white
+          - height of the parent container should be 100% in view port height
+          - apply 32 pixels of padding in all sides except top using rem unit
+          - apply a space on top using padding with a value of 15rem using pixels unit.
+          - all text should place to center
+      */
+      body {
+        background-image: url("https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        text-align: center;
+        color: #fff;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+        padding-right: 2rem;
+        padding-top: 240px;
+      }
+
+      #head {
+        height: 100%;
+      }
+      /* 4.
+          - apply a font size of 3rem in all heading tags
+      */
+      /* 5.
+          - apply a margin of 1rem for top and bottom and 0 to left and right
+      */
+      .heading {
+        font-size: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 0;
+        margin-left: 0;
+      }
+
+      /* 6. achor tag
+          - button should be displayed inline block
+          - remove underline
+          - apply a white background
+          - apply any color you want on the text
+          - apply a space inside of 0.75rem for top and bottom and 2rem for left and right;
+
+      */
+      .btn {
+        /* border: 3px solid #fff; */
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        background: #fff;
+        padding: 0.75rem;
+      }
+
+      /* 7. section
+
+          - apply a space in all sides of 2 rem
+    
+      */
+      .s1 {
+        padding: 2rem;
+      }
+
+      /* 8. media queries
+          - inspect the browser and use the mobile inspect tool
+          - pixel 2 XL, iphone 5 SE, iphone X, ipad,ipad pro
+          - all identified devices above should be configured and use
+          necessary changes on their default css rule for mobile responsiveness
+          - use inline styling for this one
+
+      */
+      /* iphone 5/se */
+      @media (max-width: 320px) {
+        body {
+          padding-top: 20px;
+        }
+        .heading {
+          color: blue;
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+      /* pixel 2xl */
+      @media (min-width: 411px) and (min-height: 823px) {
+        body {
+          padding-top: 20px;
+        }
+        .heading {
+          color: brown;
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+      /* iphone x */
+      @media (min-width: 375px) and (min-height: 812px) {
+        body {
+          padding-top: 20px;
+        }
+        .heading {
+          color: pink;
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.35rem;
+        }
+        .btn {
+          padding: 1rem;
+          font-size: 1.5rem;
+        }
+      }
+      /* ipad */
+      @media (min-width: 768px) and (min-height: 1024px) {
+        body {
+          padding-top: 20px;
+        }
+        .heading {
+          color: cyan;
+          font-size: 2.5rem;
+        }
+        p {
+          font-size: 2rem;
+        }
+        .btn {
+          padding: 1rem;
+          font-size: 2rem;
+        }
+      }
+      /* ipad pro*/
+      @media (min-width: 1024px) and (min-height: 1366px) {
+        body {
+          padding-top: 20px;
+        }
+        .heading {
+          color: darkgreen;
+          font-size: 3rem;
+        }
+        p {
+          font-size: 2.5rem;
+        }
+        .btn {
+          padding: 1rem;
+          font-size: 2.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="head">
+      <h1 class="heading">Welcome To Our Website</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
+        necessitatibus sunt recusandae a facere totam?
+      </p>
+      <a href="#" class="btn">Find Out More</a>
+    </header>
+
+    <section class="s1">
+      <h3 class="heading">About Our Company</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+        repellendus nulla eaque maxime in eveniet aut, cumque reiciendis fugit
+        voluptas saepe distinctio voluptatem excepturi quam rerum tempore
+        debitis possimus? Aliquid adipisci dolorum doloribus voluptate
+        doloremque sed libero dignissimos itaque cumque qui totam, nemo
+        molestiae amet architecto dolore nihil ipsa facilis?
+      </p>
+    </section>
+  </body>
+</html>
